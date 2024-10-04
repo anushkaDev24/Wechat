@@ -24,7 +24,7 @@ const Page = () => {
            
          
             <div className='flex justify-center mt-20 text-lg '><div className='w-20 h-8 items-center bg-[#5F9C50] flex justify-center text-white rounded' onClick={loginHandle}>Login</div></div>
-            <div className='flex justify-center text-xs text-slate-600 mt-2'>Dont have an account?Signup</div>
+            <div className='flex justify-center text-xs text-slate-600 mt-2'>Dont have an account?signup</div>
         </div>
       </div>
     </div>
