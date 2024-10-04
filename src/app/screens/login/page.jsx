@@ -15,7 +15,7 @@ const Page = () => {
             <div className='ml-24 mr-24'><div className='bg-[#CFE2CB]'><input type="text" className='bg-[transparent] w-full h-9'/></div></div>
             <div className='text-xs text-slate-600 ml-24'>Forgot Password</div>
             <div className='flex justify-center mt-20 text-lg '><div className='w-20 h-8 items-center bg-[#5F9C50] flex justify-center text-white rounded'>Login</div></div>
-            <div className='flex justify-center text-xs text-slate-600 mt-2'>Don't have an account?Signup</div>
+            <div className='flex justify-center text-xs text-slate-600 mt-2'>Dont have an account?Signup</div>
         </div>
       </div>
     </div>
