@@ -1,8 +1,14 @@
+"use client"
 import Image from "next/image";
 import React from "react";
 import loginpic from "../../assets/img1.png";
+import axios from "axios";
 
 const Page = () => {
+  const SignupHandle = ()=>
+    {
+      axios.post("http://localhost:3000/api/signup" , {email: "anushu@gmail.com" , username: "anshu" , password: "123"}).then((result)=>{alert(result.data)})
+    }
   return (
     <div className="flex max-lg:flex-col  justify-around items-center h-screen">
       <div className="bg-[#5F9C50] rounded-xl">
@@ -23,7 +29,16 @@ const Page = () => {
         </div>
         <div className="mt-20 text-xl text-slate-800 justify-center flex ">
           <div className=" w-4/5">
-             E-mail:
+            E-mail:        
+          </div>
+        </div>
+          <div className="  rounded justify-center flex mt-1 ">
+        <div className="bg-[#CFE2CB] w-4/5 rounded">
+          <input type="text" className="bg-[transparent] w-full h-9" /></div>
+        </div>
+        <div className="mt-5 text-xl text-slate-800 justify-center flex ">
+          <div className=" w-4/5">
+             Username:
           </div>
           </div>
         <div className="  rounded justify-center flex mt-1 ">
@@ -32,9 +47,9 @@ const Page = () => {
         </div>
         <div className="mt-5 text-xl text-slate-800 justify-center flex ">
           <div className=" w-4/5">
-            Password         
-       </div>
+            Password:       
           </div>
+        </div>
           <div className="  rounded justify-center flex mt-1 ">
         <div className="bg-[#CFE2CB] w-4/5 rounded">
           <input type="text" className="bg-[transparent] w-full h-9" /></div>
@@ -45,7 +60,8 @@ const Page = () => {
           </div>
           </div>
         <div className=" mt-20 text-lg justify-center flex ">
-          <div className="w-20 h-8 items-center bg-[#5F9C50] flex justify-center text-white rounded">
+          <div className="w-20 h-8 items-center bg-[#5F9C50] flex justify-center text-white rounded"
+            onClick ={SignupHandle}>
             Signup
           </div>
         </div>
